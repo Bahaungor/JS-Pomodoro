@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.timer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-container .modes{
+    display: flex;
+    gap: calc(20px + 2vw);
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.modes *{
+    background-color: ghostwhite;
+    padding: 15px 25px;
+    border: 1px solid rgb(45, 147, 243);
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.timer-container .timer {
+    text-align: center;
+    font-size: 10rem;
+    margin-bottom: 30px;
+}
+
+.timer-container .buttons{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.timer-container .buttons *{
+    padding: 10px 25px;
+    border: 1px solid rgb(206, 220, 241);
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.timer-container .buttons .start-button{
+    background-color: green;
+}
+
+.timer-container .buttons .stop-button{
+    background-color: red;
+}
+
+.timer-container .buttons .reset-button{
+    background-color: gray;
+}
+
+.footer{
+    background-color: lightslategray;
+    color: ghostwhite;
+    text-align: center;
+    padding: 10px 25px;
+    margin-top: auto;
+}
+
+.hidden{
+    visibility: hidden;
+    font-size: 0px;
+    margin-bottom: 0px;
+}
+
+.selected{
+    background-color: crimson;
+}
